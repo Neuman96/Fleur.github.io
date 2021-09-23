@@ -1,14 +1,14 @@
-.grid {
+/* .grid {
   display: grid;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: 50px 200px 100px;
+  grid-template-columns: 20%, 20%, 20%, 20%;
+  grid-template-rows: 3fr 2fr 3fr 4fr;
   grid-gap: 1em;
 }
 
-header,
+header, main,
 footer {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
 }
 
 .grid > * {
@@ -17,6 +17,41 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+*/
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+header {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+}
+
+main {
+  grid-column: 1 /span 4;
+  grid-row: 2;
+}
+
+footer {
+  grid-column: 1 / span 4;
+  grid-row: 3;
+}
+
+
+
+/* Date picker */
 
 [type="date"] {
   background: #fff
