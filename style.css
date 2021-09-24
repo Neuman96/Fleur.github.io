@@ -23,7 +23,7 @@ footer {
 .grid {
   display: grid;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   padding: 10px;
 }
 
@@ -40,7 +40,7 @@ header {
 }
 
 main {
-  grid-column: 1 /span 4;
+  grid-column: 1 / span 4;
   grid-row: 2;
 }
 
@@ -49,7 +49,9 @@ footer {
   grid-row: 3;
 }
 
-
+ul {
+  list-style-type: none;
+}
 
 /* Date picker */
 
