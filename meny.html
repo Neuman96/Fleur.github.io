@@ -4,25 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
     <title>Pizzeria la Fleur Meny</title>
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="backgroundImage">
     <div class="grid">
-      <header class="grid-item header">
-        <h1>Pizzeria la Fleur</h1>
-        <!-- Lägga in som li - element? -->
+      <header>
+        <div class="header_navigation">
+          <nav>
+            <ul> 
+            <li><a href="index.html" class="btn"> Hem</a></li>
+            <li><a href="meny.html" class="btn"> Meny</a></li>
+            <li><a href="boka.html" class="btn"> Boka bord</a></li>
+          </ul>
+          </nav>
+          </div>
+          <div class="header_logo">
+            <a href="index.html"><h1>Pizzeria la Fleur</h1></a>
+            </div>
+        <div class="phone">
         <p>Tel: 08- 742 33 30</p>
-        <nav>
-          <a href="index.html"> Hem</a>
-          <a href="meny.html"> Meny</a>
-          <a href="boka.html"> Boka bord</a>
-        </nav>
+        </div>
+
       </header>
-  </nav>
-  <main class="grid-item main">
+
+  <main class="menu center">
+
       <ul>
-        <h2>Svenska pizzor</h2>
+        <h2 id="sv">Svenska pizzor</h2>
 <h3>Pizzor à 90:-</h3>
 <ol>
 <li><strong>Margherita (ingår sallad)</strong> Tomat, ost</li>
@@ -72,7 +84,7 @@
 <li><strong>Acapulco</strong> Tomat, ost, oxfilè, taco kryddmix, champ, lök, vitlök, tacosås, jalapeno<strong> 105:-</strong></li>
 </ol>
 
-<h2>Italienska pizzor</h2>
+<h2 id="it">Italienska pizzor</h2>
 <h3>Pizzor à 110:-</h3>
 <ol start="33">
 <li><strong>Italiano</strong> Tomat, mozzarellaost, lufttorkad skinka, f. champ, f,. paprika, ruccola</li>
@@ -83,7 +95,7 @@
 <li><strong>Pronto</strong> Tomat, mozzarellaost, lufttorkad skinka, lök, f. tomater, ruccolasallad</li>
 <li><strong>Gambero</strong> Tomat, mozzarellaost, italiensk salami, räkor, ruccola, f. vitlök</li>
 </ol>
-<h2>Pasta</h2>
+<h2 id="pasta">Pasta</h2>
 <ol start="40">
 <li><strong>Oxfilépasta</strong> Oxfilé, lök, f. svamp, vitlök, sambal, gräddsås, parmesan<strong> 110:-</strong></li>
 <li><strong>Skaldjurspasta</strong> Scampi, musslor i skal, krabba, räkor, vitlök, gräddsås, parmesan, sambal<strong> 110:-</strong></li>
@@ -94,7 +106,7 @@
 <li><strong>Vegetarisk Pasta</strong> F. svamp, f. paprika, soltorkade tomater, lök, kronärtskocka,
 gräddsås, parmesan, sambal<strong> 105:-</strong></li>
 </ol>
-<h2>Sallader</h2>
+<h2 id="sallad">Sallader</h2>
 <h3>Sallader à 100:-</h3>
 <ol start="47">
 <li><strong>Tonfisksallad</strong> Isbergsallad, tonfisk, ägg, grönsaker, avocado, pasta</li>
@@ -104,7 +116,7 @@ gräddsås, parmesan, sambal<strong> 105:-</strong></li>
 <li><strong>Kycklingsallad</strong> Isbergsallad, kyckling, ägg, grönsaker, avocado, pasta</li>
 <li><strong>Avocadosallad</strong> Isbergsallad,avocado, ost, räkor, skinka, ägg, gurka, tomater, grönsaker, pasta</li>
 </ol>
-<h2>Kebab</h2>
+<h2 id="kebab">Kebab</h2>
 <ol start="53">
 <li><strong>Kebab med bröd 80:-</strong></li>
 <li><strong>Kebabtallrik med pommes 95:-</strong></li>
@@ -118,19 +130,23 @@ gräddsås, parmesan, sambal<strong> 105:-</strong></li>
 <li><strong>Kycklingkebab med ris 100:-</strong></li>
 </ol>
     </main>
-    <footer class="grid-item footer">
-      <nav>
-        <a href="index.html"> Hem</a>
-        <a href="meny.html"> Meny</a>
-        <a href="boka.html"> Boka bord</a>
-      </nav>
-      <p>Address: Vendelsövägen 64 TROLLBÄCKEN</p>
+    <footer>
+      <div class="oppet">
         <h2>Öppetider</h2>
         <ul>
           <li>Måndag - Torsdag 11:00 - 21:00</li>
           <li>Fredag - Lördag 11:00 - 22:00</li>
           <li>Söndag - 12:00 - 21:00</li>
+        </div>
+      <div class="address">
+        <h2>Address:</h2>
+        <ul>
+          <li>Vendelsövägen 64</li>
+          <li>Trollbäcken</li>
         </ul>
+      </div>
+
+      </ul>
     </footer>
   </div>
   </body>

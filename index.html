@@ -4,42 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
     <title>Pizzeria la Fleur</title>
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="backgroundImage">
     <div class="grid">
-      <header class="grid-item header">
-        <h1>Pizzeria la Fleur</h1>
-        <!-- Lägga in som li - element? -->
+      <header>
+        <div class="header_navigation">
+          <nav>
+            <ul> 
+            <li><a href="index.html" class="btn"> Hem</a></li>
+            <li><a href="meny.html" class="btn"> Meny</a></li>
+            <li><a href="boka.html" class="btn"> Boka bord</a></li>
+          </ul>
+          </nav>
+          </div>
+        <div class="header_logo">
+        <a href="index.html"><h1>Pizzeria la Fleur</h1></a>
+        </div>
+        <div class="phone">
         <p>Tel: 08- 742 33 30</p>
+        </div>
 
-        <nav>
-          <a href="index.html"> Hem</a>
-          <a href="meny.html"> Meny</a>
-          <a href="boka.html"> Boka bord</a>
-        </nav>
       </header>
-      <main class="grid-item main">
+      <main>
+        <article class="valkommen">
         <h2>Välkommen till Pizzeria la Fleur</h2>
-        <h3>
+        <p>
           Grundat 1976 med fokus på färska kvalitetråvaror ville vi
           revolutionera sveriges pizzamarknad med den mest utsökta blblblbl
-        </h3>
+        </p>
+      </article>
+     
+     
       </main>
+      <footer>
+        <div class="oppet">
+          <h2>Öppetider</h2>
+          <ul>
+            <li>Måndag - Torsdag 11:00 - 21:00</li>
+            <li>Fredag - Lördag 11:00 - 22:00</li>
+            <li>Söndag - 12:00 - 21:00</li>
+          </div>
+        <div class="address">
+          <h2>Address:</h2>
+          <ul>
+            <li>Vendelsövägen 64</li>
+            <li>Trollbäcken</li>
+          </ul>
+        </div>
 
-      <footer class="grid-item footer">
-        <nav>
-          <a href="index.html"> Hem</a>
-          <a href="meny.html"> Meny</a>
-          <a href="boka.html"> Boka bord</a>
-        </nav>
-        <p>Address: Vendelsövägen 64 TROLLBÄCKEN</p>
-        <h2>Öppetider</h2>
-        <ul>
-          <li>Måndag - Torsdag 11:00 - 21:00</li>
-          <li>Fredag - Lördag 11:00 - 22:00</li>
-          <li>Söndag - 12:00 - 21:00</li>
         </ul>
       </footer>
     </div>
